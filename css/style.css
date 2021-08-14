@@ -53,6 +53,7 @@ header, .container {
 
 .btn {
   height: 25px;
+  outline: none;
   background-color: transparent;
   font-size: 17px;
   color: #fff;
