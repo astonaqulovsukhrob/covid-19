@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
+
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(26, 26, 90, 10);
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  font-size: 1.5rem;
+  background-image: url(../covid\ 19.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(94, 50, 50);
+  text-shadow: 0 0 15px #fff;
+}
+
+header, form {
+  min-height: 28vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input, form button {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  background: #fff;
+  border-radius: 10px 0 0 10px;
+  transition: box-shadow 0.3s;
+}
+
+form input:focus {
+  box-shadow: 0 0 10px #fff;
+}
+
+form button {
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  background-color: rgb(153, 64, 64);
+  cursor: pointer;
+  transition: background .3s;
+}
+
+form button:hover {
+  background: rgb(209, 1, 1);
+}
+
+.info-container {
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+ul li i {
+  font-size: 4.3rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.myinstagram, .mytelegram, .mygithub {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 22px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.myinstagram a {
+  color: brown;
+}
+
+.mytelegram a {
+  color: blue;
+}
+
+.mygithub a {
+  color: black;
+}
+
+.myinstagram:hover, .mytelegram:hover, .mygithub:hover {
+  background-color: #aaa;
+  box-shadow: 0 0 18px #aaa;
+  transform: translateY(-8px);
+}
