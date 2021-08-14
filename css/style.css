@@ -5,7 +5,7 @@ body {
   margin: 0;
   text-align: center;
   color: #fff;
-  background-color: rgba(26, 26, 90, 10);
+  background-color: rgb(46, 46, 46);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,37 +19,55 @@ header {
   text-shadow: 0 0 15px #fff;
 }
 
-header, form {
+header, .container {
   min-height: 28vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-form input, form button {
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-  font-size: 1.2rem;
-  background: #fff;
-  border-radius: 10px 0 0 10px;
-  transition: box-shadow 0.3s;
-}
-
-form input:focus {
-  box-shadow: 0 0 10px #fff;
-}
-
-form button {
-  border-radius: 0 10px 10px 0;
+.search-box {
+  display: inline-block;
+  margin: 0 15px;
+  background: rgb(78, 78, 78);
+  border-radius: 40px;
+  padding: 10px;
+  height: 25px;
   color: #fff;
-  background-color: rgb(153, 64, 64);
-  cursor: pointer;
-  transition: background .3s;
 }
 
-form button:hover {
-  background: rgb(209, 1, 1);
+.input {
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  width: 0px;
+  transition: 0.8s;
+  outline: none;
+  color: #fff;
+} 
+
+.input::placeholder {
+  color: #fff ;
+}
+
+.btn {
+  height: 25px;
+  background-color: transparent;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  padding: 2px;
+
+}
+
+.search-box:hover {
+  box-shadow: 0 0  10px #fff;
+}
+
+.search-box:hover .input{
+  width: 240px;
+  padding: 5px;
 }
 
 .info-container {
@@ -112,4 +130,10 @@ footer {
   background-color: #aaa;
   box-shadow: 0 0 18px #aaa;
   transform: translateY(-8px);
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: .8rem;
+  }
 }
